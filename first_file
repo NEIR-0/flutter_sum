@@ -1,1 +1,25 @@
-## Read Me
+# Read Me
+
+## LINK USEFULL
+
+- https://docs.flutter.dev/get-started/install
+- https://developer.android.com/studio?gad_source=1&gclid=Cj0KCQjwu-63BhC9ARIsAMMTLXTeHKsrlBLMYREtGUMhivb7PWaWjZArIFDgTUQJ7nIkxQ92x-s6EdEaAnB6EALw_wcB&gclsrc=aw.ds&hl=id
+- https://docs.flutter.dev/get-started/install/windows/mobile
+
+## CREATE NEW PROJECT
+
+### JANGAN PAKAI TERMINAL!!! (GAK HOT RELOAD)
+
+- flutter create my_flutter_app
+- open android studio and start the simulator (kalo awal create satu project trus download simulatorn nya dulu)
+- Ctrl + Shift + P (atau Cmd + Shift + P), lalu "flutter: new project"
+- masuk ke folder nya, literly masuk karena ketika di dalam folder akan muncul "RUN BUTTON" (start debugging)
+- tunggu run selesai
+
+## MAIN FOLDER
+
+fokus ke lib aja untuk awal karena itu yang penting
+
+## AUTO SUGESTION NOTED
+
+- st (ctrl + space)

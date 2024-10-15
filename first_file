@@ -13,7 +13,8 @@
 - flutter create my_flutter_app
 - open android studio and start the simulator (kalo awal create satu project trus download simulatorn nya dulu)
 - Ctrl + Shift + P (atau Cmd + Shift + P), lalu "flutter: new project"
-- masuk ke folder nya, literly masuk karena ketika di dalam folder akan muncul "RUN BUTTON" (start debugging)
+- masuk ke folder nya, literly masuk karena ketika di dalam folder
+- trus buka libs/main.dart, akan muncul "RUN BUTTON" (start debugging)
 - tunggu run selesai
 
 ## MAIN FOLDER

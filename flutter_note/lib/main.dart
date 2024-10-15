@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_note/pertemuan_1/biodata.dart';
 import 'package:flutter_note/pertemuan_2/layout.dart';
+import 'package:flutter_note/pertemuan_3/ui/hospital_page.dart';
+import 'package:flutter_note/pertemuan_4/ui/pegawai_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -16,7 +18,11 @@ class MainApp extends StatelessWidget {
           // pertemua_1
           // body: BiodataKu(),
           // pertemua_2
-          body: LayoutingSpace()),
+          // body: LayoutingSpace()),
+          // pertemua_3
+          // body: HospitalPages()),
+          // pertemua_4
+          body: PegawaiPage()),
     );
   }
 }

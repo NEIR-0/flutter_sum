@@ -8,6 +8,7 @@ class PegawaiForm extends StatefulWidget {
 }
 
 class _PegawaiFormState extends State<PegawaiForm> {
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,30 +26,35 @@ class _PegawaiFormState extends State<PegawaiForm> {
             color: Colors.white,
           ),
         ),
-        body: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 5), // padding px 5
-            child: Column(children: [
-              const TextField(
-                decoration: InputDecoration(labelText: "NIP"),
-              ),
-              const TextField(
-                decoration: InputDecoration(labelText: "Nama"),
-              ),
-              const TextField(
-                decoration: InputDecoration(labelText: "Tanggal Lahir"),
-              ),
-              const TextField(
-                decoration: InputDecoration(labelText: "Nomor Telepon"),
-              ),
-              const TextField(
-                decoration: InputDecoration(labelText: "Email"),
-              ),
-              const TextField(
-                decoration: InputDecoration(labelText: "Password"),
-              ),
-              const SizedBox(height: 20),
-              ElevatedButton(onPressed: () {}, child: const Text("Submit"))
-            ])));
+        body: SingleChildScrollView(
+            child: Form(
+                key: _formKey,
+                child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 5), // padding px 5
+                    child: Column(children: [
+                      const TextField(
+                        decoration: InputDecoration(labelText: "NIP"),
+                      ),
+                      const TextField(
+                        decoration: InputDecoration(labelText: "Nama"),
+                      ),
+                      const TextField(
+                        decoration: InputDecoration(labelText: "Tanggal Lahir"),
+                      ),
+                      const TextField(
+                        decoration: InputDecoration(labelText: "Nomor Telepon"),
+                      ),
+                      const TextField(
+                        decoration: InputDecoration(labelText: "Email"),
+                      ),
+                      const TextField(
+                        decoration: InputDecoration(labelText: "Password"),
+                      ),
+                      const SizedBox(height: 20),
+                      ElevatedButton(
+                          onPressed: () {}, child: const Text("Submit"))
+                    ])))));
   }
 }
 

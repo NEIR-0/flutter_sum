@@ -3,8 +3,8 @@ import 'package:flutter_note/pertemuan_5/models/globalModel.dart';
 import 'package:flutter_note/pertemuan_5/ui/pegawai_detail.dart';
 
 class PegawaiForm extends StatefulWidget {
-  final PegawaiModel data; // define
-  const PegawaiForm({super.key, required this.data});
+  final PegawaiModel? data; // define
+  const PegawaiForm({super.key, this.data});
 
   @override
   State<PegawaiForm> createState() => _PegawaiFormState();
@@ -19,16 +19,17 @@ class _PegawaiFormState extends State<PegawaiForm> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 
-  void instate() {
+  @override
+  void initState() {
     super.initState();
-    setState(() {
-      _nipController.text = widget.data.nip;
-      _namaController.text = widget.data.nama;
-      _tanggalLahirController.text = widget.data.tanggalLahir;
-      _telponController.text = widget.data.nomorTelepon;
-      _emailController.text = widget.data.email;
-      _passwordController.text = widget.data.password;
-    });
+    if (widget.data != null) {
+      _nipController.text = widget.data!.nip;
+      _namaController.text = widget.data!.nama;
+      _tanggalLahirController.text = widget.data!.tanggalLahir;
+      _telponController.text = widget.data!.nomorTelepon;
+      _emailController.text = widget.data!.email;
+      _passwordController.text = widget.data!.password;
+    }
   }
 
   @override

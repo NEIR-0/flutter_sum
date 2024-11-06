@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_note/pertemuan_2/layout.dart'; // pertemuan_2
 // import 'package:flutter_note/pertemuan_3/ui/hospital_page.dart'; // pertemuan_3
 // import 'package:flutter_note/pertemuan_4/ui/pegawai_page.dart'; // pertemuan_4
-import 'package:flutter_note/pertemuan_5/ui/hospital_page.dart'; // pertemuan_5
+import 'package:flutter_note/pertemuan_5/ui/pegawai_page.dart'; // pertemuan_5
 
 void main() {
   runApp(const MainApp());
@@ -25,7 +25,7 @@ class MainApp extends StatelessWidget {
           // pertemua_4
           // body: PegawaiPage()),
           // pertemua_5
-          body: HospitalPages()),
+          body: PegawaiPage()),
     );
   }
 }

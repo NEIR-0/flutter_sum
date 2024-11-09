@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_note/pertemuan_4/ui/listItem.dart';
 import 'package:flutter_note/pertemuan_4/ui/pegawai_form.dart';
 
 class PegawaiPage extends StatefulWidget {
@@ -45,21 +46,6 @@ class _PegawaiPageState extends State<PegawaiPage> {
             ),
           ],
         ),
-        body: ListView(
-          children: const [
-            Card(
-                child: ListTile(
-              title: Text('Pegawai A'),
-            )),
-            Card(
-                child: ListTile(
-              title: Text('Pegawai B'),
-            )),
-            Card(
-                child: ListTile(
-              title: Text('Pegawai C'),
-            ))
-          ],
-        ));
+        body: const ListItem());
   }
 }
